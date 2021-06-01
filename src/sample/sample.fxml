@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" prefHeight="947.0" prefWidth="822.0" vgap="10" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" />
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" />
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" />
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" />
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" />
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" />
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" />
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" />
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" />
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" />
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" />
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" />
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="663.0" prefWidth="600.0">
+         <children>
+            <ImageView fx:id="TAPPETINO1" fitHeight="368.0" fitWidth="736.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/TAPPETINO4.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="TAPPETINO2" fitHeight="368.0" fitWidth="774.0" layoutX="7.0" layoutY="368.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/TAPPETINO3.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="CARTA2" fitHeight="271.0" fitWidth="218.0" layoutX="282.0" layoutY="416.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/back.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="CARTA1" fitHeight="271.0" fitWidth="186.0" layoutX="282.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/back2.jpg" />
+               </image>
+            </ImageView>
+                <Button fx:id="CAMBIOPG1" layoutX="619.0" layoutY="213.0" mnemonicParsing="false" onAction="#setPositionG1" rotate="180.0" text="CAMBIO POSIZIONE" />
+                <Button fx:id="CAMBIOPG2" layoutX="7.0" layoutY="525.0" mnemonicParsing="false" onAction="#setPositionG2" text="CAMBIO POSIZIONE" />
+                <Button fx:id="CAMBIOG1" layoutX="38.0" layoutY="51.0" mnemonicParsing="false" onAction="#CambioG1" rotate="180.0" text="PESCA" />
+                <Button fx:id="CAMBIOG2" layoutX="663.0" layoutY="641.0" mnemonicParsing="false" onAction="#CambioG2" text="PESCA" />
+                <Label fx:id="PUNTIG2" layoutX="69.0" layoutY="405.0" text="0" textFill="#eaff00">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font></Label>
+                <Button fx:id="COMBAT" layoutX="345.0" layoutY="362.0" mnemonicParsing="false" onAction="#Lotta" text="DUELLO" />
+                <Label fx:id="PUNTIG1" layoutX="656.0" layoutY="296.0" rotate="180.0" text="0" textFill="#f6ff00">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+                <Button fx:id="START" layoutX="529.0" layoutY="359.0" mnemonicParsing="false" onAction="#Start" text="START" />
+         </children>
+        </AnchorPane>
+          <AnchorPane prefHeight="0.0" prefWidth="470.0" GridPane.rowIndex="11" />
+    </children>
+</GridPane>
